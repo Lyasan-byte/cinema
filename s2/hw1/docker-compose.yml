@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    container_name: cinema-db
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: Mishka
+      POSTGRES_DB: cinema_db
+      TZ: UTC
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d cinema_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  flyway:
+    image: flyway/flyway:10
+    container_name: flyway-cinema
+    depends_on:
+      db:
+        condition: service_healthy
+    command: >
+      -url=jdbc:postgresql://db:5432/cinema_db
+      -user=admin
+      -password=Mishka
+      -connectRetries=60
+      migrate
+    volumes:
+      - ./migrations:/flyway/sql
+
+volumes:
+  pgdata:
