@@ -51,7 +51,7 @@ SELECT user_id, name, tags
 FROM cinema.users
 WHERE tags @> ARRAY['action'];
 ```
-![Screenshot at 13.58.43.png](screenshots/Screenshot%20at%2013.58.43.png)
+![Screenshot at 07.58.43.png](screenshots/Screenshot%20at%2007.58.43.png)
 
 ## Создание GiST индексов
 ```sql
