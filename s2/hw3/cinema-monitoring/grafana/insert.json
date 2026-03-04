@@ -1,0 +1,96 @@
+{
+  "type": "timeseries",
+  "title": "INSERT Rate",
+  "gridPos": {
+    "x": 0,
+    "y": 16,
+    "w": 12,
+    "h": 8
+  },
+  "datasource": {
+    "uid": "c0308d0c-7d52-4dcf-9829-b9a5e99b7f97",
+    "type": "prometheus"
+  },
+  "id": 4,
+  "targets": [
+    {
+      "refId": "A",
+      "expr": "rate(pg_stat_database_tup_inserted{datname=\"cinema_db\"}[5m])",
+      "range": true,
+      "instant": false,
+      "datasource": {
+        "type": "prometheus",
+        "uid": "c0308d0c-7d52-4dcf-9829-b9a5e99b7f97"
+      },
+      "editorMode": "code",
+      "legendFormat": "tup_inserted/sec"
+    }
+  ],
+  "options": {
+    "tooltip": {
+      "mode": "single",
+      "sort": "none"
+    },
+    "legend": {
+      "showLegend": true,
+      "displayMode": "list",
+      "placement": "bottom",
+      "calcs": []
+    }
+  },
+  "fieldConfig": {
+    "defaults": {
+      "custom": {
+        "drawStyle": "line",
+        "lineInterpolation": "linear",
+        "barAlignment": 0,
+        "lineWidth": 1,
+        "fillOpacity": 0,
+        "gradientMode": "none",
+        "spanNulls": false,
+        "insertNulls": false,
+        "showPoints": "auto",
+        "pointSize": 5,
+        "stacking": {
+          "mode": "none",
+          "group": "A"
+        },
+        "axisPlacement": "auto",
+        "axisLabel": "",
+        "axisColorMode": "text",
+        "scaleDistribution": {
+          "type": "linear"
+        },
+        "axisCenteredZero": false,
+        "hideFrom": {
+          "tooltip": false,
+          "viz": false,
+          "legend": false
+        },
+        "thresholdsStyle": {
+          "mode": "off"
+        }
+      },
+      "color": {
+        "mode": "palette-classic"
+      },
+      "mappings": [],
+      "thresholds": {
+        "mode": "absolute",
+        "steps": [
+          {
+            "value": null,
+            "color": "green"
+          },
+          {
+            "value": 80,
+            "color": "red"
+          }
+        ]
+      },
+      "unit": "short",
+      "min": 0
+    },
+    "overrides": []
+  }
+}
