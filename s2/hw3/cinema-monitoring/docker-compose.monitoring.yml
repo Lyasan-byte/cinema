@@ -26,6 +26,7 @@ services:
       - "9090:9090"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
       - '--storage.tsdb.retention.time=200h'
@@ -49,7 +50,13 @@ services:
     depends_on:
       - prometheus
     restart: unless-stopped
+    volumes:
+      - grafana_data:/var/lib/grafana
 
 networks:
   monitoring:
     driver: bridge
+volumes:
+  grafana_data:
+  prometheus_data:
+
