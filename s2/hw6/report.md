@@ -126,8 +126,7 @@ docker exec -it pg-replica1 psql -U admin -d cinema_db
 ```sql
 SELECT count(*) FROM load_test;
 ```
-![Screenshot 2026-03 at 15.48.39.png](screenshots/Screenshot%202026-03%20at%2015.48.39.png)
-
+![Screenshot 2026-03 at 15.45.17.png](screenshots/Screenshot%202026-03%20at%2015.45.17.png)
 Данные сразу дошли до реплики, это подтверждает byte_lag = 0 на primary
 ![Screenshot 2026-03 at 15.51.33.png](screenshots/Screenshot%202026-03%20at%2015.51.33.png)
 
