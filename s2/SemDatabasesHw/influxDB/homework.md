@@ -6,12 +6,12 @@
 # Запуск InfluxDB
 docker compose up -d
 ```
-![Screenshot 2026-05-01 at 10.51.18.png](screenshots/Screenshot%202026-05-01%20at%2010.51.18.png)
+![Screenshot 2026-05 at 10.51.18.png](screenshots/Screenshot%202026-05%20at%2010.51.18.png)
 После запуска InfluxDB доступен в браузере:
 http://localhost:8086
 
 ## Задание 2. Создание базы через веб-интерфейс
-![Screenshot 2026-05-01 at 10.53.46.png](screenshots/Screenshot%202026-05-01%20at%2010.53.46.png)
+![Screenshot 2026-05 at 10.53.46.png](screenshots/Screenshot%202026-05%20at%2010.53.46.png)
 ## Задание 3. Наполнение данными промышленных датчиков
 
 ```bash
@@ -37,14 +37,14 @@ vibration,motor_id=M-1002,axis=y,zone=B value=1.7
 vibration,motor_id=M-1002,axis=y,zone=B value=2.2
 "
 ```
-![Screenshot 2026-05-01 at 11.00.07.png](screenshots/Screenshot%202026-05-01%20at%2011.00.07.png)
+![Screenshot 2026-05 at 11.00.07.png](screenshots/Screenshot%202026-05%20at%2011.00.07.png)
 ## Задание 4. Базовые запросы
 ```bash
 # 1. Просмотреть все данные за последние 30 минут
 from(bucket: "sensors")
 |> range(start: -30m)
 ```
-![Screenshot 2026-05-01 at 11.05.09.png](screenshots/Screenshot%202026-05-01%20at%2011.05.09.png)
+![Screenshot 2026-05 at 11.05.09.png](screenshots/Screenshot%202026-05%20at%2011.05.09.png)
 ```bash
 # 2. Посмотреть измерения только одного датчика
 Например, данные по электродвигателю M-1001:
@@ -53,7 +53,7 @@ from(bucket: "sensors")
   |> range(start: -30m)
   |> filter(fn: (r) => r.motor_id == "M-1001")
 ```
-![Screenshot 2026-05-01 at 11.05.44.png](screenshots/Screenshot%202026-05-01%20at%2011.05.44.png)
+![Screenshot 2026-05 at 11.05.44.png](screenshots/Screenshot%202026-05%20at%2011.05.44.png)
 ```bash
 # 3. Максимальное значение на одном датчике
 from(bucket: "sensors")
@@ -61,7 +61,7 @@ from(bucket: "sensors")
   |> filter(fn: (r) => r.motor_id == "M-1001")
   |> max()
 ```
-![Screenshot 2026-05-01 at 11.06.01.png](screenshots/Screenshot%202026-05-01%20at%2011.06.01.png)
+![Screenshot 2026-05 at 11.06.01.png](screenshots/Screenshot%202026-05%20at%2011.06.01.png)
 ```bash
 # 4. Среднее значение на датчике
    from(bucket: "sensors")
