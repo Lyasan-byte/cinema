@@ -1,0 +1,16 @@
+spring:
+  ai:
+    vectorstore:
+      qdrant:
+        host: qdrant
+        port: 6334
+        collection-name: "demo_collection"
+        initialize-schema: true
+    embedding:
+      transformer:
+
+        tokenizer:
+          uri: https://huggingface.co/intfloat/multilingual-e5-small/resolve/main/tokenizer.json
+
+        onnx:
+          model-uri: https://huggingface.co/intfloat/multilingual-e5-small/resolve/main/onnx/model.onnx

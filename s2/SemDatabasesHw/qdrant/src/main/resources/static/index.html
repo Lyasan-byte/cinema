@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><title>Qdrant Java Demo</title></head>
+<body>
+<h2>1. Добавить текст в базу знаний</h2>
+<textarea id="textToAdd" rows="4" cols="50"></textarea><br>
+<button onclick="addText()">Сохранить (векторизовать)</button>
+
+<h2>2. Семантический поиск</h2>
+<input type="text" id="searchQuery" size="50">
+<button onclick="search()">Найти по смыслу</button>
+<ul id="results"></ul>
+
+<script>
+    async function addText() {
+        const text = document.getElementById('textToAdd').value;
+        await fetch('/api/add-batch', { method: 'POST', body: text });
+        alert('Текст векторизован и сохранен в Qdrant!');
+    }
+    async function search() {
+        const query = document.getElementById('searchQuery').value;
+        const res = await fetch('/api/search?query=' + encodeURIComponent(query));
+        const items = await res.json();
+        document.getElementById('results').innerHTML = items.map(i => `>${i}</li>`).join('');
+    }
+</script>
+</body>
+</html>
