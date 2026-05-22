@@ -1,0 +1,164 @@
+services:
+  db:
+    image: postgres:15
+    container_name: cinema-db
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: Mishka
+      POSTGRES_DB: cinema_db
+      TZ: UTC
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    command: >
+      postgres
+      -c shared_preload_libraries=pg_stat_statements
+      -c pg_stat_statements.track=all
+      -c pg_stat_statements.max=10000
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d cinema_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:26.1
+    container_name: cinema-clickhouse
+    ports:
+      - "8123:8123"
+      - "9000:9000"
+    environment:
+      CLICKHOUSE_DB: default
+      CLICKHOUSE_USER: default
+      CLICKHOUSE_PASSWORD: "Mishka"
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+    healthcheck:
+      test: ["CMD-SHELL", "clickhouse-client --user default --password Mishka --query 'SELECT 1'"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  airflow-db:
+    image: postgres:16
+    container_name: airflow-db
+    environment:
+      POSTGRES_DB: airflow
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+    volumes:
+      - airflow_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow -d airflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  airflow-init:
+    image: apache/airflow:2.10.5-python3.11
+    container_name: airflow-init
+    depends_on:
+      db:
+        condition: service_healthy
+      airflow-db:
+        condition: service_healthy
+      clickhouse:
+        condition: service_healthy
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__WEBSERVER__SECRET_KEY: "cinema_airflow_secret_key_2026"
+
+      _PIP_ADDITIONAL_REQUIREMENTS: "psycopg2-binary clickhouse-connect"
+
+      CINEMA_DB_HOST: db
+      CINEMA_DB_PORT: 5432
+      CINEMA_DB_NAME: cinema_db
+      CINEMA_DB_USER: admin
+      CINEMA_DB_PASSWORD: Mishka
+
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_PORT: 8123
+      CLICKHOUSE_USER: default
+      CLICKHOUSE_PASSWORD: "Mishka"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./data:/opt/airflow/data
+    command: >
+      bash -c "
+      airflow db migrate &&
+      airflow users create
+      --username airflow
+      --password airflow
+      --firstname Airflow
+      --lastname Admin
+      --role Admin
+      --email airflow@example.com || true
+      "
+
+  airflow-webserver:
+    image: apache/airflow:2.10.5-python3.11
+    container_name: airflow-webserver
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__WEBSERVER__SECRET_KEY: "cinema_airflow_secret_key_2026"
+
+      _PIP_ADDITIONAL_REQUIREMENTS: "psycopg2-binary clickhouse-connect"
+
+      CINEMA_DB_HOST: db
+      CINEMA_DB_PORT: 5432
+      CINEMA_DB_NAME: cinema_db
+      CINEMA_DB_USER: admin
+      CINEMA_DB_PASSWORD: Mishka
+
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_PORT: 8123
+      CLICKHOUSE_USER: default
+      CLICKHOUSE_PASSWORD: "Mishka"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./data:/opt/airflow/data
+    command: airflow webserver
+
+  airflow-scheduler:
+    image: apache/airflow:2.10.5-python3.11
+    container_name: airflow-scheduler
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__WEBSERVER__SECRET_KEY: "cinema_airflow_secret_key_2026"
+
+      _PIP_ADDITIONAL_REQUIREMENTS: "psycopg2-binary clickhouse-connect"
+
+      CINEMA_DB_HOST: db
+      CINEMA_DB_PORT: 5432
+      CINEMA_DB_NAME: cinema_db
+      CINEMA_DB_USER: admin
+      CINEMA_DB_PASSWORD: Mishka
+
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_PORT: 8123
+      CLICKHOUSE_USER: default
+      CLICKHOUSE_PASSWORD: "Mishka"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./data:/opt/airflow/data
+    command: airflow scheduler
+
+volumes:
+  pgdata:
+  airflow_postgres_data:
+  clickhouse_data:

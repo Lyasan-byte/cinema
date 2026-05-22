@@ -1,0 +1,121 @@
+external_movie_id,title,description,release_year,duration,age_rating,language,country,director_name,genre_name,price_min,price_max,poster_url
+ext_movie_0001,External Movie 0001,Generated external movie description 1,2007,111,6+,German,United Kingdom,Lucas Wood,Comedy,5.55,10.93,https://example.com/posters/external_movie_0001.jpg
+ext_movie_0002,External Movie 0002,Generated external movie description 2,1995,107,6+,English,Italy,Emily Turner,Horror,5.35,10.83,https://example.com/posters/external_movie_0002.jpg
+ext_movie_0003,External Movie 0003,Generated external movie description 3,2004,137,18+,Korean,United States,Daniel Brooks,Horror,5.59,18.76,https://example.com/posters/external_movie_0003.jpg
+ext_movie_0004,External Movie 0004,Generated external movie description 4,2003,177,12+,French,United Kingdom,Olivia North,Comedy,4.68,13.85,https://example.com/posters/external_movie_0004.jpg
+ext_movie_0005,External Movie 0005,Generated external movie description 5,2006,183,0+,Portuguese,Italy,Robert Night,History,4.43,14.59,https://example.com/posters/external_movie_0005.jpg
+ext_movie_0006,External Movie 0006,Generated external movie description 6,2013,153,6+,French,United States,Victor Hill,Mystery,4.5,17.78,https://example.com/posters/external_movie_0006.jpg
+ext_movie_0007,External Movie 0007,Generated external movie description 7,2004,190,0+,Italian,Germany,Grace Black,Romance,4.15,10.35,https://example.com/posters/external_movie_0007.jpg
+ext_movie_0008,External Movie 0008,Generated external movie description 8,2012,106,12+,French,Brazil,Daniel Brooks,Thriller,6.33,13.77,https://example.com/posters/external_movie_0008.jpg
+ext_movie_0009,External Movie 0009,Generated external movie description 9,2014,114,18+,Japanese,Japan,Mark Devlin,Crime,5.91,13.36,https://example.com/posters/external_movie_0009.jpg
+ext_movie_0010,External Movie 0010,Generated external movie description 10,2015,114,0+,Japanese,Brazil,Nora Lake,Crime,6.28,23.36,https://example.com/posters/external_movie_0010.jpg
+ext_movie_0011,External Movie 0011,Generated external movie description 11,2019,98,12+,German,France,Lucas Wood,Thriller,5.61,16.54,https://example.com/posters/external_movie_0011.jpg
+ext_movie_0012,External Movie 0012,Generated external movie description 12,2015,126,6+,German,Italy,Tom Silver,Comedy,4.04,17.81,https://example.com/posters/external_movie_0012.jpg
+ext_movie_0013,External Movie 0013,Generated external movie description 13,1999,160,6+,Italian,Brazil,Laura Stone,Adventure,6.01,23.93,https://example.com/posters/external_movie_0013.jpg
+ext_movie_0014,External Movie 0014,Generated external movie description 14,2023,112,18+,English,United Kingdom,Lucas Wood,Mystery,4.52,24.46,https://example.com/posters/external_movie_0014.jpg
+ext_movie_0015,External Movie 0015,Generated external movie description 15,1997,117,16+,German,Spain,Anna Forest,Horror,4.06,18.67,https://example.com/posters/external_movie_0015.jpg
+ext_movie_0016,External Movie 0016,Generated external movie description 16,2022,177,6+,French,Germany,Mia Green,Animation,6.49,15.44,https://example.com/posters/external_movie_0016.jpg
+ext_movie_0017,External Movie 0017,Generated external movie description 17,2000,149,18+,English,Brazil,Nora Lake,Fantasy,3.79,14.4,https://example.com/posters/external_movie_0017.jpg
+ext_movie_0018,External Movie 0018,Generated external movie description 18,2009,110,0+,Japanese,Brazil,Laura Stone,Comedy,3.07,22.01,https://example.com/posters/external_movie_0018.jpg
+ext_movie_0019,External Movie 0019,Generated external movie description 19,2024,178,6+,German,Spain,Lucas Wood,Sci-Fi,5.92,23.16,https://example.com/posters/external_movie_0019.jpg
+ext_movie_0020,External Movie 0020,Generated external movie description 20,2017,107,18+,Japanese,Germany,Olivia North,Romance,4.05,22.14,https://example.com/posters/external_movie_0020.jpg
+ext_movie_0021,External Movie 0021,Generated external movie description 21,2023,137,0+,Japanese,France,Laura Stone,Action,5.59,17.16,https://example.com/posters/external_movie_0021.jpg
+ext_movie_0022,External Movie 0022,Generated external movie description 22,2004,80,0+,English,France,Laura Stone,History,3.07,16.38,https://example.com/posters/external_movie_0022.jpg
+ext_movie_0023,External Movie 0023,Generated external movie description 23,2022,110,12+,Portuguese,France,Lucas Wood,Sci-Fi,3.12,13.08,https://example.com/posters/external_movie_0023.jpg
+ext_movie_0024,External Movie 0024,Generated external movie description 24,2026,140,6+,Portuguese,South Korea,Emily Turner,Comedy,5.88,24.12,https://example.com/posters/external_movie_0024.jpg
+ext_movie_0025,External Movie 0025,Generated external movie description 25,2017,132,16+,English,United Kingdom,Mark Devlin,Adventure,3.38,14.85,https://example.com/posters/external_movie_0025.jpg
+ext_movie_0026,External Movie 0026,Generated external movie description 26,1996,111,6+,Japanese,Italy,Grace Black,Sci-Fi,5.9,22.91,https://example.com/posters/external_movie_0026.jpg
+ext_movie_0027,External Movie 0027,Generated external movie description 27,2005,89,16+,French,United States,Lucas Wood,Family,4.68,13.86,https://example.com/posters/external_movie_0027.jpg
+ext_movie_0028,External Movie 0028,Generated external movie description 28,2005,101,16+,Portuguese,Spain,Emily Turner,Family,3.05,9.45,https://example.com/posters/external_movie_0028.jpg
+ext_movie_0029,External Movie 0029,Generated external movie description 29,2014,80,16+,Korean,Spain,Michael Cross,Adventure,4.59,10.47,https://example.com/posters/external_movie_0029.jpg
+ext_movie_0030,External Movie 0030,Generated external movie description 30,2025,164,16+,German,France,Michael Cross,Crime,5.78,21.74,https://example.com/posters/external_movie_0030.jpg
+ext_movie_0031,External Movie 0031,Generated external movie description 31,2024,87,12+,English,United States,Eva Star,Fantasy,6.86,20.55,https://example.com/posters/external_movie_0031.jpg
+ext_movie_0032,External Movie 0032,Generated external movie description 32,2000,87,18+,French,Canada,Laura Stone,Animation,5.0,22.79,https://example.com/posters/external_movie_0032.jpg
+ext_movie_0033,External Movie 0033,Generated external movie description 33,2015,95,18+,Japanese,Brazil,Oscar Reed,Drama,3.26,21.19,https://example.com/posters/external_movie_0033.jpg
+ext_movie_0034,External Movie 0034,Generated external movie description 34,2026,146,12+,Korean,France,Nora Lake,Crime,5.47,16.76,https://example.com/posters/external_movie_0034.jpg
+ext_movie_0035,External Movie 0035,Generated external movie description 35,2009,138,12+,French,United States,Grace Black,Animation,4.05,11.01,https://example.com/posters/external_movie_0035.jpg
+ext_movie_0036,External Movie 0036,Generated external movie description 36,1994,148,6+,Korean,Canada,Peter Moon,History,6.98,26.92,https://example.com/posters/external_movie_0036.jpg
+ext_movie_0037,External Movie 0037,Generated external movie description 37,2008,100,16+,Korean,Brazil,Mia Green,Drama,3.27,11.93,https://example.com/posters/external_movie_0037.jpg
+ext_movie_0038,External Movie 0038,Generated external movie description 38,1996,97,12+,French,United Kingdom,Lucas Wood,Sci-Fi,5.66,18.98,https://example.com/posters/external_movie_0038.jpg
+ext_movie_0039,External Movie 0039,Generated external movie description 39,2011,106,12+,Portuguese,Germany,Mark Devlin,Comedy,4.08,18.15,https://example.com/posters/external_movie_0039.jpg
+ext_movie_0040,External Movie 0040,Generated external movie description 40,1992,80,12+,German,Germany,Daniel Brooks,Horror,5.53,22.97,https://example.com/posters/external_movie_0040.jpg
+ext_movie_0041,External Movie 0041,Generated external movie description 41,2025,81,0+,French,Canada,Lucas Wood,Drama,4.76,20.35,https://example.com/posters/external_movie_0041.jpg
+ext_movie_0042,External Movie 0042,Generated external movie description 42,1999,135,6+,English,Germany,Peter Moon,History,6.33,20.07,https://example.com/posters/external_movie_0042.jpg
+ext_movie_0043,External Movie 0043,Generated external movie description 43,1992,125,6+,Japanese,United Kingdom,Peter Moon,Mystery,6.72,26.3,https://example.com/posters/external_movie_0043.jpg
+ext_movie_0044,External Movie 0044,Generated external movie description 44,1999,110,6+,German,South Korea,Anna Forest,Sci-Fi,5.23,23.35,https://example.com/posters/external_movie_0044.jpg
+ext_movie_0045,External Movie 0045,Generated external movie description 45,2016,182,6+,Korean,Canada,Robert Night,Adventure,5.94,15.92,https://example.com/posters/external_movie_0045.jpg
+ext_movie_0046,External Movie 0046,Generated external movie description 46,2004,105,16+,Spanish,Germany,Victor Hill,Crime,6.48,24.36,https://example.com/posters/external_movie_0046.jpg
+ext_movie_0047,External Movie 0047,Generated external movie description 47,2011,115,0+,Korean,Japan,Mia Green,Adventure,3.08,10.98,https://example.com/posters/external_movie_0047.jpg
+ext_movie_0048,External Movie 0048,Generated external movie description 48,2011,83,0+,Korean,Canada,Eva Star,Documentary,5.71,23.36,https://example.com/posters/external_movie_0048.jpg
+ext_movie_0049,External Movie 0049,Generated external movie description 49,2012,173,12+,Italian,Brazil,Mia Green,Comedy,3.14,17.09,https://example.com/posters/external_movie_0049.jpg
+ext_movie_0050,External Movie 0050,Generated external movie description 50,2006,85,16+,English,Italy,Lucas Wood,Romance,4.53,18.18,https://example.com/posters/external_movie_0050.jpg
+ext_movie_0051,External Movie 0051,Generated external movie description 51,2002,126,16+,French,Japan,Oscar Reed,Action,5.87,22.0,https://example.com/posters/external_movie_0051.jpg
+ext_movie_0052,External Movie 0052,Generated external movie description 52,2009,144,12+,Italian,Japan,Olivia North,Horror,5.64,12.51,https://example.com/posters/external_movie_0052.jpg
+ext_movie_0053,External Movie 0053,Generated external movie description 53,2016,165,16+,German,Brazil,Eva Star,Documentary,4.17,11.08,https://example.com/posters/external_movie_0053.jpg
+ext_movie_0054,External Movie 0054,Generated external movie description 54,2009,116,6+,Italian,Brazil,Oscar Reed,Romance,4.61,22.12,https://example.com/posters/external_movie_0054.jpg
+ext_movie_0055,External Movie 0055,Generated external movie description 55,2003,145,16+,German,United Kingdom,Michael Cross,Thriller,4.28,15.91,https://example.com/posters/external_movie_0055.jpg
+ext_movie_0056,External Movie 0056,Generated external movie description 56,1995,184,6+,Korean,France,Emily Turner,Sci-Fi,5.65,19.94,https://example.com/posters/external_movie_0056.jpg
+ext_movie_0057,External Movie 0057,Generated external movie description 57,2020,158,0+,Portuguese,South Korea,Eva Star,Crime,3.09,11.76,https://example.com/posters/external_movie_0057.jpg
+ext_movie_0058,External Movie 0058,Generated external movie description 58,2015,111,6+,English,United Kingdom,Henry White,Crime,5.86,16.62,https://example.com/posters/external_movie_0058.jpg
+ext_movie_0059,External Movie 0059,Generated external movie description 59,2023,139,0+,Japanese,United Kingdom,Grace Black,Sci-Fi,3.69,23.06,https://example.com/posters/external_movie_0059.jpg
+ext_movie_0060,External Movie 0060,Generated external movie description 60,2025,156,12+,Portuguese,Brazil,Mia Green,Adventure,6.2,21.21,https://example.com/posters/external_movie_0060.jpg
+ext_movie_0061,External Movie 0061,Generated external movie description 61,2000,175,16+,Portuguese,Germany,Victor Hill,Family,6.31,19.53,https://example.com/posters/external_movie_0061.jpg
+ext_movie_0062,External Movie 0062,Generated external movie description 62,2023,142,6+,Korean,Spain,Laura Stone,Horror,5.54,22.03,https://example.com/posters/external_movie_0062.jpg
+ext_movie_0063,External Movie 0063,Generated external movie description 63,2010,149,0+,German,Canada,Victor Hill,Adventure,4.13,13.21,https://example.com/posters/external_movie_0063.jpg
+ext_movie_0064,External Movie 0064,Generated external movie description 64,1994,133,16+,Spanish,Italy,Grace Black,Adventure,5.77,21.37,https://example.com/posters/external_movie_0064.jpg
+ext_movie_0065,External Movie 0065,Generated external movie description 65,2014,178,18+,English,Brazil,Olivia North,Fantasy,3.24,20.73,https://example.com/posters/external_movie_0065.jpg
+ext_movie_0066,External Movie 0066,Generated external movie description 66,2014,189,16+,Japanese,Spain,Victor Hill,Documentary,3.01,13.29,https://example.com/posters/external_movie_0066.jpg
+ext_movie_0067,External Movie 0067,Generated external movie description 67,2011,165,16+,German,Spain,Sophie Martin,Animation,4.73,10.17,https://example.com/posters/external_movie_0067.jpg
+ext_movie_0068,External Movie 0068,Generated external movie description 68,2026,164,0+,French,South Korea,Sophie Martin,Family,5.13,23.73,https://example.com/posters/external_movie_0068.jpg
+ext_movie_0069,External Movie 0069,Generated external movie description 69,2014,121,6+,Portuguese,Japan,Nora Lake,Mystery,4.84,10.59,https://example.com/posters/external_movie_0069.jpg
+ext_movie_0070,External Movie 0070,Generated external movie description 70,2016,112,0+,Portuguese,United States,Lucas Wood,Drama,6.51,15.68,https://example.com/posters/external_movie_0070.jpg
+ext_movie_0071,External Movie 0071,Generated external movie description 71,1994,179,0+,English,France,Emily Turner,Family,6.99,17.24,https://example.com/posters/external_movie_0071.jpg
+ext_movie_0072,External Movie 0072,Generated external movie description 72,1998,140,0+,Japanese,Spain,Julia Rivers,Mystery,3.07,10.36,https://example.com/posters/external_movie_0072.jpg
+ext_movie_0073,External Movie 0073,Generated external movie description 73,1997,179,6+,Korean,United Kingdom,Eva Star,Drama,4.47,18.56,https://example.com/posters/external_movie_0073.jpg
+ext_movie_0074,External Movie 0074,Generated external movie description 74,2014,130,6+,French,Brazil,Victor Hill,Comedy,6.71,20.35,https://example.com/posters/external_movie_0074.jpg
+ext_movie_0075,External Movie 0075,Generated external movie description 75,1997,181,18+,English,Japan,Lucas Wood,Adventure,5.78,15.3,https://example.com/posters/external_movie_0075.jpg
+ext_movie_0076,External Movie 0076,Generated external movie description 76,2011,81,16+,Portuguese,United Kingdom,Henry White,Action,5.64,11.67,https://example.com/posters/external_movie_0076.jpg
+ext_movie_0077,External Movie 0077,Generated external movie description 77,1999,135,6+,Korean,Brazil,Lucas Wood,Mystery,5.53,22.96,https://example.com/posters/external_movie_0077.jpg
+ext_movie_0078,External Movie 0078,Generated external movie description 78,2007,121,6+,French,Germany,Grace Black,Crime,4.92,16.45,https://example.com/posters/external_movie_0078.jpg
+ext_movie_0079,External Movie 0079,Generated external movie description 79,2014,123,0+,Portuguese,Japan,Daniel Brooks,Fantasy,5.99,19.54,https://example.com/posters/external_movie_0079.jpg
+ext_movie_0080,External Movie 0080,Generated external movie description 80,2011,115,18+,Korean,Italy,Anna Forest,Thriller,3.84,20.81,https://example.com/posters/external_movie_0080.jpg
+ext_movie_0081,External Movie 0081,Generated external movie description 81,2016,142,18+,Japanese,Spain,Tom Silver,Fantasy,6.78,13.06,https://example.com/posters/external_movie_0081.jpg
+ext_movie_0082,External Movie 0082,Generated external movie description 82,2004,131,6+,Korean,Brazil,Peter Moon,Fantasy,6.16,12.56,https://example.com/posters/external_movie_0082.jpg
+ext_movie_0083,External Movie 0083,Generated external movie description 83,2025,122,12+,Portuguese,Germany,Michael Cross,Documentary,5.2,15.36,https://example.com/posters/external_movie_0083.jpg
+ext_movie_0084,External Movie 0084,Generated external movie description 84,2010,95,18+,German,France,Emily Turner,Horror,3.91,19.73,https://example.com/posters/external_movie_0084.jpg
+ext_movie_0085,External Movie 0085,Generated external movie description 85,2023,156,12+,French,France,Michael Cross,Crime,4.93,20.8,https://example.com/posters/external_movie_0085.jpg
+ext_movie_0086,External Movie 0086,Generated external movie description 86,2024,96,12+,English,United States,Lucas Wood,Documentary,4.43,13.96,https://example.com/posters/external_movie_0086.jpg
+ext_movie_0087,External Movie 0087,Generated external movie description 87,2021,93,0+,Korean,Spain,Tom Silver,Fantasy,5.78,12.67,https://example.com/posters/external_movie_0087.jpg
+ext_movie_0088,External Movie 0088,Generated external movie description 88,2006,190,16+,French,United Kingdom,Olivia North,Fantasy,4.35,23.83,https://example.com/posters/external_movie_0088.jpg
+ext_movie_0089,External Movie 0089,Generated external movie description 89,1993,99,6+,Korean,United Kingdom,Victor Hill,Comedy,3.29,17.73,https://example.com/posters/external_movie_0089.jpg
+ext_movie_0090,External Movie 0090,Generated external movie description 90,2004,179,18+,Italian,Spain,Grace Black,Documentary,5.22,16.46,https://example.com/posters/external_movie_0090.jpg
+ext_movie_0091,External Movie 0091,Generated external movie description 91,2009,152,18+,English,Brazil,Robert Night,Mystery,6.43,26.28,https://example.com/posters/external_movie_0091.jpg
+ext_movie_0092,External Movie 0092,Generated external movie description 92,1995,100,6+,German,Italy,Laura Stone,Sci-Fi,3.82,11.99,https://example.com/posters/external_movie_0092.jpg
+ext_movie_0093,External Movie 0093,Generated external movie description 93,2020,117,0+,Japanese,Germany,Michael Cross,Horror,3.0,14.76,https://example.com/posters/external_movie_0093.jpg
+ext_movie_0094,External Movie 0094,Generated external movie description 94,2004,113,18+,Japanese,South Korea,Robert Night,Thriller,6.43,12.5,https://example.com/posters/external_movie_0094.jpg
+ext_movie_0095,External Movie 0095,Generated external movie description 95,2007,185,6+,French,United States,Daniel Brooks,Mystery,3.89,11.12,https://example.com/posters/external_movie_0095.jpg
+ext_movie_0096,External Movie 0096,Generated external movie description 96,2026,116,16+,French,Spain,Michael Cross,Horror,4.22,20.45,https://example.com/posters/external_movie_0096.jpg
+ext_movie_0097,External Movie 0097,Generated external movie description 97,2024,143,16+,French,Brazil,Mark Devlin,History,4.6,13.68,https://example.com/posters/external_movie_0097.jpg
+ext_movie_0098,External Movie 0098,Generated external movie description 98,2006,83,0+,Japanese,Brazil,Eva Star,Drama,4.72,14.55,https://example.com/posters/external_movie_0098.jpg
+ext_movie_0099,External Movie 0099,Generated external movie description 99,2007,153,0+,German,Spain,Mia Green,Romance,6.99,22.07,https://example.com/posters/external_movie_0099.jpg
+ext_movie_0100,External Movie 0100,Generated external movie description 100,2017,161,16+,French,Spain,Peter Moon,Adventure,4.76,13.93,https://example.com/posters/external_movie_0100.jpg
+ext_movie_0101,External Movie 0101,Generated external movie description 101,2000,122,16+,Portuguese,Germany,Olivia North,Family,4.32,19.37,https://example.com/posters/external_movie_0101.jpg
+ext_movie_0102,External Movie 0102,Generated external movie description 102,1995,120,12+,Spanish,United Kingdom,Olivia North,Family,6.03,11.58,https://example.com/posters/external_movie_0102.jpg
+ext_movie_0103,External Movie 0103,Generated external movie description 103,2024,139,16+,English,France,Mia Green,Action,5.05,24.87,https://example.com/posters/external_movie_0103.jpg
+ext_movie_0104,External Movie 0104,Generated external movie description 104,2018,177,0+,Japanese,Germany,Lucas Wood,Sci-Fi,5.48,17.96,https://example.com/posters/external_movie_0104.jpg
+ext_movie_0105,External Movie 0105,Generated external movie description 105,2021,95,0+,Japanese,Canada,Michael Cross,Thriller,6.7,18.27,https://example.com/posters/external_movie_0105.jpg
+ext_movie_0106,External Movie 0106,Generated external movie description 106,2004,187,0+,Portuguese,United Kingdom,Sophie Martin,Fantasy,3.04,14.16,https://example.com/posters/external_movie_0106.jpg
+ext_movie_0107,External Movie 0107,Generated external movie description 107,2007,133,16+,Portuguese,France,Grace Black,Thriller,6.72,16.1,https://example.com/posters/external_movie_0107.jpg
+ext_movie_0108,External Movie 0108,Generated external movie description 108,2022,175,6+,French,Germany,Henry White,Action,3.57,11.43,https://example.com/posters/external_movie_0108.jpg
+ext_movie_0109,External Movie 0109,Generated external movie description 109,1990,116,12+,Portuguese,Canada,Grace Black,Thriller,6.73,19.35,https://example.com/posters/external_movie_0109.jpg
+ext_movie_0110,External Movie 0110,Generated external movie description 110,2024,128,16+,Spanish,France,Victor Hill,Animation,4.93,14.92,https://example.com/posters/external_movie_0110.jpg
+ext_movie_0111,External Movie 0111,Generated external movie description 111,2016,85,12+,Portuguese,South Korea,Olivia North,Romance,4.52,22.36,https://example.com/posters/external_movie_0111.jpg
+ext_movie_0112,External Movie 0112,Generated external movie description 112,1999,143,0+,German,Italy,Eva Star,Action,6.16,20.94,https://example.com/posters/external_movie_0112.jpg
+ext_movie_0113,External Movie 0113,Generated external movie description 113,2018,92,18+,Portuguese,United States,Sophie Martin,Adventure,6.47,24.58,https://example.com/posters/external_movie_0113.jpg
+ext_movie_0114,External Movie 0114,Generated external movie description 114,1994,140,12+,Spanish,Brazil,Olivia North,Romance,6.47,26.02,https://example.com/posters/external_movie_0114.jpg
+ext_movie_0115,External Movie 0115,Generated external movie description 115,2024,128,12+,Portuguese,Italy,Mark Devlin,Animation,3.31,13.24,https://example.com/posters/external_movie_0115.jpg
+ext_movie_0116,External Movie 0116,Generated external movie description 116,2008,109,0+,Italian,United Kingdom,Robert Night,Fantasy,3.26,17.73,https://example.com/posters/external_movie_0116.jpg
+ext_movie_0117,External Movie 0117,Generated external movie description 117,1991,85,12+,English,Germany,Peter Moon,Action,3.66,13.15,https://example.com/posters/external_movie_0117.jpg
+ext_movie_0118,External Movie 0118,Generated external movie description 118,2016,152,6+,German,Canada,Laura Stone,Animation,4.71,13.37,https://example.com/posters/external_movie_0118.jpg
+ext_movie_0119,External Movie 0119,Generated external movie description 119,2005,143,18+,German,France,Grace Black,Romance,6.47,20.77,https://example.com/posters/external_movie_0119.jpg
+ext_movie_0120,External Movie 0120,Generated external movie description 120,1990,182,16+,Korean,Italy,Daniel Brooks,Comedy,4.01,12.84,https://example.com/posters/external_movie_0120.jpg
